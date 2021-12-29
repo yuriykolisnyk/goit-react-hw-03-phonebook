@@ -20,7 +20,6 @@ class App extends Component {
   };
 
   componentDidMount() {
-    console.log('componentDidMount');
     const contacts = localStorage.getItem('contacts');
     const parsedContacts = JSON.parse(contacts);
 
@@ -30,7 +29,6 @@ class App extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log('componentDidUpdate');
     const nextContacts = this.state.contacts;
     const prevContacts = prevState.contacts;
 
